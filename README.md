@@ -1,66 +1,10 @@
-# Documentation
+# ManiaScript documentation
 
-## Syntax basics
+The goal of this book is to provide better documentation for ManiaScript.
 
-### declare variables
+ManiaScript is a scripting language made by Nadeo for their games \(TrackMania, ShootMania, and the upcoming QuestMania\).
 
-### types
-
-### arrays
-
-## Setup
-
-### editors
-
-## Creating your first script
-
-### skeleton of a script
-
-### basic mode extending ModeShootmania
-
-### labels
-
-### basic functions/events handling
-
-## Advanced Types/Declarations
-
-### extension variable
-
-### net variables
-
-### persistant variables
-
-## Manialinks
-
-### creating a manialink
-
-### adding logic with the script tag
-
-### sync variables between manialinks
-
-## Useful resources
-
-### nadeo's lib source code
-
-### reference
-
-### cp discord
-
-### doc
-
-### forums
-
-# Cookbook
-
-## Modifying player's attributes
-
-## Use CustomUI
-
-## Capture landmarks
-
-## Custom items / Drop item from player
-
-## Actions
+This language is easy to use if you already have some programming knowledge and it allows you to create your own game modes or map editor plugin.
 
 
 

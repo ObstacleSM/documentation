@@ -1,5 +1,3 @@
-# 
-
 # Documentation
 
 ## Syntax basics

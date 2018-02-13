@@ -8,5 +8,5 @@ Here is a list of the different editors:
 | :-- | :-- |
 | Visual Studio Code |  |
 | Sublime Text 3 | |
-| Notepad++  | Latest Up[Aug 8 2014](https://github.com/ManiaPlanet/notepadplusplus-maniascript) |
+| Notepad++  | Latest Update [Aug 8 2014](https://github.com/ManiaPlanet/notepadplusplus-maniascript) |
 | In-Game editor  | |

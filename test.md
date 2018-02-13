@@ -30,7 +30,7 @@ declare Integer[] MyList;
 There are several basic functions to manipulate them, and you can access one element by its index. The indexes start at 0, so the first element is `0` and the last is `MyList.count-1`. Accessing an invalid index will result in an 'Out of bounds` error.
 
 ```maniascript
-// Get the first element, it will fail if there is no elements
+// Access an element
 declare FirstElement = MyList[0];
 
 // Basic functions

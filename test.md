@@ -48,7 +48,7 @@ MyList.clear();
 An array is similar to a list, except that you can specify a type for the index.
 
 ```maniascript
-declare Text[Integer] MyArray
+declare Text[Integer] MyArray;
 ```
 
 The array above is not a list! There is no `add` function for arrays, instead you directly assign a value for the given key.

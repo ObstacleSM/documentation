@@ -14,7 +14,11 @@ main() {
 }
 ```
 
-This script prints "Hello World!" to the console output. Let's try to understand the script bit by bit. Each script starts with a `main` function, it means that the code within the `main` function is executed first.
+This script prints "Hello World!" to the console output. Let's try to understand the script bit by bit.
+
+Each script starts with a `main` function, it means that the code within the `main` function is executed first.
+
+---
 
 ```maniascript
 declare Text Nothing;
@@ -34,7 +38,7 @@ Text Hello() {
 }
 ```
 
-Here is the code for the function `Hello`.
+Here is the code for the function `Hello`.  
 A **function declaration** begins with a type that indicates what kind of value it returns. It is followed by the name of the function. You can declare variables and call functions in the body of the function declaration, but you have to return a value with the `return` keyword.  
 This function is named `Hello`, returns a value of type `Text` which is "Hello World!".
 
@@ -44,6 +48,7 @@ In the declaration of the variable `Sentence`, no type was specified. That's bec
 log(Sentence);
 ```
 
-And finally the last line of the script!
-Did you notice the two parenthesis again? This line is also a function call.
+And finally the last line of the script!  
+Did you notice the two parenthesis again? This line is also a function call.  
 `log` is a function that takes one argument and print it to the output console. Here it prints the value of `Sentence`, so "Hello World!" is printed.
+

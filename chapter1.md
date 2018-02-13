@@ -18,7 +18,7 @@
 * basic functions/events handling
 
 ## Advanced Types/Declarations
-
+* alias
 * extension variable
 * net variables
 * persistant variables

@@ -3,9 +3,7 @@
 ## Syntax basics
 
 * declare variables
-
 * types
-
 * arrays functions
 
 ## Setup
@@ -15,19 +13,14 @@
 ## Creating your first script
 
 * skeleton of a script
-
 * basic mode extending ModeShootmania.Script.txt
-
 * labels
-
 * basic functions/events handling
 
 ## Advanced Types/Declarations
 
 * extension variable
-
 * net variables
-
 * persistant variables
 
 ## Manialinks

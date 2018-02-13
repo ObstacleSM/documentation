@@ -1,7 +1,5 @@
 # Syntax Basics
 
-## 
-
 ## Basic types
 
 There are 9 different types in ManiaScript: `Void`, `Integer`, `Real`, `Boolean`, `Text`, `Vec2`, `Vec3`,`Int3` and `Ident`.

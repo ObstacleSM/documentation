@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [Outline](chapter1.md)
-* [test](test.md)
+* [Syntax Basics](test.md)
 

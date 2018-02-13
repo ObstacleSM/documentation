@@ -4,7 +4,12 @@
 
 There are 9 different types in ManiaScript: `Void`, `Integer`, `Real`, `Boolean`, `Text`, `Vec2`, `Vec3`,`Int3` and `Ident`.
 
-### Void
+| Void |  |
+| :--- | :--- |
+|  |  |
+|  |  |
+
+### 
 
 `Void` is a type that means empty. You cannot create variables of that type, it is used to declare functions that returns nothing.
 

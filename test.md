@@ -25,7 +25,7 @@ A List is a type that can store multiple values. You can declare list by adding 
 declare Integer[] MyList;
 ```
 
-There are several basic functions to manipulate them, and you can access one element by its index. The indexes start at 0, so the first element is `0` and the last is `MyList.count-1`. Accessing an invalid index will result in an 'Out of bounds` error.
+There are several basic functions to manipulate them, and you can access one element by its index. The indexes start at 0, so the first element is `0` and the last is `MyList.count-1`. Accessing an invalid index will result in an `Out of bounds` error.
 
 ```maniascript
 // Access an element
@@ -56,4 +56,6 @@ The array above is not a list! There is no `add` function for arrays, instead yo
 ```maniascript
 MyArray[1] = "One";
 ```
+
+
 

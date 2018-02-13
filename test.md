@@ -1,5 +1,8 @@
 # Syntax Basics
 
+
+Here is a little script written in ManiaScript. As you can see, ManiaScript uses a C-like syntax: there blocks delimited by curly braces `{}` , and each instruction ends with a semicolon `;`.
+
 ```maniascript
 Text Hello() {
     return "Hello World!";
@@ -13,7 +16,6 @@ main() {
 ```
 
 Here is a little script written in ManiaScript. As you can see, ManiaScript uses a C-like syntax: there blocks delimited by curly braces `{}` , and each instruction ends with a semicolon `;`.
-
 This script prints "Hello World!" to the console output. Let's try to understand the script bit by bit. Each script starts with a `main` function, it means that the code within the `main` function is executed first.
 
 ```maniascript

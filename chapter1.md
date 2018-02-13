@@ -16,7 +16,7 @@
 
 * skeleton of a script
 
-* basic mode extending ModeShootmania
+* basic mode extending ModeShootmania.Script.txt
 
 * labels
 

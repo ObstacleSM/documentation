@@ -1,5 +1,37 @@
 # Syntax Basics
 
+```maniascript
+Text Hello() {
+    return "Hello World!";
+}
+
+main() {
+    declare Text Nothing;
+    declare Sentence = Hello();
+    log(Sentence);
+}
+```
+
+Here is a little script written in ManiaScript. As you can see, ManiaScript uses a C-like syntax: there blocks delimited by curly braces `{}` , and each instruction ends with a semicolon `;`.
+
+This script prints "Hello World!" to the console output. Let's try to understand the script bit by bit. Each script starts with a `main` function, it means that the code within the `main` function is executed first.
+
+```
+declare Text Nothing;
+```
+
+The first line declares a new **variable**. A variable is used to hold some data. It starts with a declare keyword, then the type and the name of the variables are indicated. We have not set any value for the Nothing variable, consequently it's value is an empty text.
+
+```
+declare Sentence = Hello();
+```
+
+
+
+
+
+
+
 ## Basic types
 
 There are 9 different types in ManiaScript: `Void`, `Integer`, `Real`, `Boolean`, `Text`, `Vec2`, `Vec3`,`Int3` and `Ident`.

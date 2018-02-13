@@ -26,17 +26,25 @@ The first line declares a new **variable**. A variable is used to hold some data
 declare Sentence = Hello();
 ```
 
-This line is similar  to the first one, we declare a new variable named `Sentence` and assign a value. The value of `Sentence` is `Hello()`. Did you notice the two parenthesis? They are here because `Hello()` is a *function call*, so we need to read the `Hello` function to know the value of `Sentence`.
+This line is similar  to the first one, we declare a new variable named `Sentence` and assign a value. The value of `Sentence` is `Hello()`. Did you notice the two parenthesis? They are here because `Hello()` is a**function call**, so we need to read the `Hello` function to know the value of `Sentence`.
 
 ```maniascript
 Text Hello() {
     return "Hello World!";
 }
-
 ```
 
-Here is the code for the function `Hello`. A *function declaration* begins with a type that indicate what kind of value it returns. It is followed by the name of the function. You can declare variables and call functions in the body of the function, but you have to return a value with the `return` keyword.
+Here is the code for the function `Hello`.
+A **function declaration** begins with a type that indicates what kind of value it returns. It is followed by the name of the function. You can declare variables and call functions in the body of the function declaration, but you have to return a value with the `return` keyword.  
 This function is named `Hello`, returns a value of type `Text` which is "Hello World!".
+
+```maniascript
+log(Sentence);
+```
+
+And finally the last line of the script!
+Did you notice the two parenthesis again? This line is also a function call.
+`log` is a function that takes one argument and print it to the output console. Here it prints the value of `Sentence`, so "Hello World!" is printed.
 
 ## Basic types
 

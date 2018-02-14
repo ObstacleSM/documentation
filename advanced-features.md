@@ -58,11 +58,11 @@ When you are assigning a value to an extension variable during its declaration, 
 
 ### Net variables
 
-
+Maybe net variables should be in the same section as the manialinks. I dont see any other use cases for net variables.
 
 ### Persistant variables
 
 
-
+The keyword `persistent` can be added to a variable declaration to declare a persistant variable. A persistant variable is stored in the player's profile, and thus keep its value across different servers.
 
 

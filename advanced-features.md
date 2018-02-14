@@ -25,8 +25,8 @@ In a nutshell, an alias is like a pointer in C, it points to the first player of
 The advantages of aliases over regular assignations is that aliases are faster and consume less ressources.
 
 ```maniascript
-declare Frame\_Content = (Page.GetFirstChild("Frame\_Content") as CMlFrame);
-declare Frame\_Content <=> (Page.GetFirstChild("Frame\_Content") as CMlFrame);
+declare Frame_Content = (Page.GetFirstChild("Frame_Content") as CMlFrame);
+declare Frame_Content <=> (Page.GetFirstChild("Frame_Content") as CMlFrame);
 ```
 
 Getting an element from a manialink like this is pretty common, the two lines above do the exact same thing but the line with an alias instead of an equal sign is better!

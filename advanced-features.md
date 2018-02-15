@@ -12,17 +12,20 @@ When dealing with API arrays (arrays already defined) like `Players` in game mod
 declare FirstPlayer = Players[0];
 declare FirstPlayerAlias <=> Players[0];
 
+// This code doesn't work but imagine it working
 // The players array is sorted by scores automatically
 // So both FirstPlayer and FirstPlayerAlias refer to Player A
 
+// Let's give some points to Player B
 Players[1].Score.Points += 10;
 
-// FirstPlayer still refers to Player A as you would expect
-// FirstPlayerAlias is now referring to Player B, the current Players[0]
+// FirstPlayer is Player A, because we assigned the value of Players[0]
+// However FirstPlayerAlias is now referring to Player B, the current Players[0]
+// FirstPlayerAlias will always points to the first element of Players
 ```
 
 In a nutshell, an alias is like a pointer in C, it points to the first player of the `Players` array.
-The advantages of aliases over regular assignations is that aliases are faster and consume less ressources.
+The advantages of aliases over regular assignations is that aliases are faster and consume less resources.
 
 ```maniascript
 declare Frame_Content = (Page.GetFirstChild("Frame_Content") as CMlFrame);

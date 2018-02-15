@@ -5,7 +5,8 @@
 * [Getting Started](getting_started.md)
 * [Types](types.md)
 * [Setup](setup.md)
-* [Creating your first game mode](creating-your-first-game-mode.md)
+* Create your first mode
+  * [Setup](creating-your-first-game-mode.md)
   * [Create your first SM game mode](create-your-first-sm-game-mode.md)
   * [Create your first TM game mode](create-your-first-tm-game-mode.md)
 * [Advanced features](advanced-features.md)

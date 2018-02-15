@@ -28,13 +28,13 @@ In ManiaScript, every script starts with a `main` function, it means that the co
 declare Text Nothing;
 ```
 
-The first line declares a new **variable**. A variable is used to hold some data. It starts with a declare keyword, then the type and the name of the variable are indicated. We have not set any value for the `Nothing` variable, consequently its value is an empty text.
+The first line declares a new **variable**. A variable is used to hold some data. It starts with a declare keyword, then the type and the name of the variable are indicated. We have not set any value for the variable named `Nothing`, consequently its value is an empty text.
 
 ```maniascript
 declare Sentence = Hello();
 ```
 
-This line is similar  to the first one, we declare a new variable named `Sentence` and assign a value. The value of `Sentence` is `Hello()`. Did you notice the two parenthesis? They are here because `Hello()` is a  **function call**, so we need to read the `Hello` function to know the value of `Sentence`.
+This line is similar  to the first one, we declare a new variable named `Sentence` and assign it a value with the equal sign `=`. The value of `Sentence` is `Hello()`. Did you notice the two parenthesis after `Hello`? They are here because `Hello()` is a  **function call**, so we need to read the `Hello` function to know the value of `Sentence`.
 
 ```maniascript
 Text Hello() {

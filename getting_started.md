@@ -1,6 +1,10 @@
 # Getting Started
 
-Here is a little script written in ManiaScript. As you can see, ManiaScript uses a C-like syntax: there are blocks delimited by curly braces `{}` , and each instruction ends with a semicolon `;`.
+In this part I am going to explain a basic script. If you already have some experience with programming and that you understand what the code below does, you can probably skip this part.
+
+## Hello World!
+
+ManiaScript uses a C-like syntax: there are code blocks delimited by curly braces `{}` , that contain several instructions, ending with a semicolon `;`.
 
 ```maniascript
 Text Hello() {
@@ -16,15 +20,15 @@ main() {
 
 This script prints "Hello World!" to the console output. Let's try to understand the script bit by bit.
 
-Each script starts with a `main` function, it means that the code within the `main` function is executed first.
+___
 
----
+In ManiaScript, every script starts with a `main` function, it means that the code within the `main` function is executed first. Let's start by reading the first line of the `main` function.
 
 ```maniascript
 declare Text Nothing;
 ```
 
-The first line declares a new **variable**. A variable is used to hold some data. It starts with a declare keyword, then the type and the name of the variables are indicated. We have not set any value for the `Nothing` variable, consequently its value is an empty text.
+The first line declares a new **variable**. A variable is used to hold some data. It starts with a declare keyword, then the type and the name of the variable are indicated. We have not set any value for the `Nothing` variable, consequently its value is an empty text.
 
 ```maniascript
 declare Sentence = Hello();

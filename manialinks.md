@@ -22,7 +22,7 @@ To start manialink you need basically the xml header and define manialink with t
 Manialink elements consists of different basic XML-tags, which are introduced below.
 
 | XML tag | Description |
-| :- | :- |
+| :---: | :--- |
 | `<quad/>` | Displays image-type content. <br/> Supported file-types are: .png, .jpg and .dds <br/>Supported protocols are: file:// , http:// and https:// |
 | `<label/>` | Displays text content. |
 | `<audio/>` | Play audio content.<br/>Supported formats: .ogg, .wav and .mux |
@@ -72,13 +72,9 @@ Each element normally are defined with multiple attributes, to add more just sep
 
 Quite meny of the elements share additional Size and Aligment attributes, these shared attributes are marked with grey background.
 
-| | |
-| | |
 
 You should define either color, style or image for the quad:
 
-| | |
-| | |
 
 You can also recolor / alter the colors of the image or style element.
 

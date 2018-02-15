@@ -22,19 +22,23 @@ To start manialink you need basically the xml header and define manialink with t
 Manialink elements consists of different basic XML-tags, which are introduced below.
 
 | XML tag | Description |
-| :- | :- |
-| \<quad /\> | Displays image-type content.
-Supported file-types are: .png, .jpg and .dds
-Supported protocols are: file:// , http:// and https:// |
-| <label /\> | Displays text content. |
-| <audio /\> | Play audio content.
-Supported formats: .ogg, .wav and .mux |
-| <video /\> | Displays video content. 
-Supported types:  .webm |
-| <graph /\> | Display line graphics.
-The element, needs to be filled using maniascript.|
-| <gauge /\> | Display progress bar.
-Progress can be updated with maniascript. |
+| :---- | :----- |
+| `<quad />` | Displays image-type content. <br/> Supported file-types are: .png, .jpg and .dds <br/>Supported protocols are: file:// , http:// and https:// |
+| `<label />` | Displays text content. |
+| `<audio />` | Play audio content.<br/>Supported formats: .ogg, .wav and .mux |
+| `<video />` | Displays video content.<br/>Supported types:  .webm |
+| `<graph />` | Display line graphics.<br/>The element, needs to be filled using maniascript.|
+| `<gauge />` | Display progress bar.<br/>Progress can be updated with maniascript. |
+| `<entry />` | Display entry-inputbox.<br/> Depending on which scope the manialink is used, the text can be retrieved using http post, dedicated server callback or maniascript accessors. 
+| `<fileentry />` | Displays inputbox for file with local file browser.<br/>Note: Works same as entry, but returns relative path to file. |
+| `<textedit />` | Displays multiline text editor.<br/>This element can be used as multiline entry or maniascript editor with syntax highlighting. Works same as entry for returning the contents. |
+
+`<frame>`
+`</frame>`	This is different from the previous elements, as this itself doesn't show anything, but it can be used to group contents to a container. The grouped contents then can be then easily moved / repositioned.
+`<framemodel>`
+`</framemodel>`	This element defines a model container for the frame instances, works same as frames. By default the frame model is not shown at ui, you display the model using frame instaces.
+`<frameinstance/>`	This element is used to display contents defined with frame model.
+
 
 
 ## Client side script

@@ -23,17 +23,17 @@ Manialink elements consists of different basic XML-tags, which are introduced be
 
 | XML tag | Description |
 | :- | :- |
-| <quad /> | Displays image-type content. 
+| \<quad /\> | Displays image-type content.
 Supported file-types are: .png, .jpg and .dds
 Supported protocols are: file:// , http:// and https:// |
-| <label /> | Displays text content. |
-| <audio /> | Play audio content.
+| <label /\> | Displays text content. |
+| <audio /\> | Play audio content.
 Supported formats: .ogg, .wav and .mux |
-| <video /> | Displays video content. 
+| <video /\> | Displays video content. 
 Supported types:  .webm |
-| <graph /> | Display line graphics.
+| <graph /\> | Display line graphics.
 The element, needs to be filled using maniascript.|
-| <gauge /> | Display progress bar.
+| <gauge /\> | Display progress bar.
 Progress can be updated with maniascript. |
 
 

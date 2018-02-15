@@ -58,11 +58,6 @@ Wait, you are maybe thinking that there is an error in the code above. Does the 
 
 When you are assigning a value to an extension variable during its declaration, you are setting a **default value**. It means that if `RespawnCounter` was already set to something other than `0`, its value will not change. In other words, `RespawnCounter` will be set to `0` only if it is the first time that we declare `RespawnCounter`.
 
-
-### Net variables
-
-Maybe net variables should be in the same section as the manialinks. I dont see any other use cases for net variables.
-
 ### Persistant variables
 
 

@@ -124,5 +124,3 @@ You can also recolor / alter the colors of the image or style element.
 ## Casting
 
 ## net variables
-
-## Casting

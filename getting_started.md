@@ -34,7 +34,7 @@ The first line declares a new **variable**. A variable is used to hold some data
 declare Sentence = Hello();
 ```
 
-This line is similar  to the first one, we declare a new variable named `Sentence` and assign it a value with the equal sign `=`. The value of `Sentence` is `Hello()`. Did you notice the two parenthesis after `Hello`? They are here because `Hello()` is a  **function call**, so we need to read the `Hello` function to know the value of `Sentence`.
+This line is similar  to the first one, we declare a new variable named `Sentence` and assign it a value with the equal sign `=`. The value of `Sentence` is `Hello()`. Did you notice the two parenthesis after `Hello`? They are here because `Hello()` is a  **function call**, so we need to read the function named `Hello` to know the value of `Sentence`.
 
 ```maniascript
 Text Hello() {
@@ -42,7 +42,7 @@ Text Hello() {
 }
 ```
 
-Here is the code for the function `Hello`.  
+Here is the code for the function `Hello`. This code is written above the `main` function because we call it from main and the ManiaScript compiler reads a file from the top to the bottom.
 A **function declaration** begins with a type that indicates what kind of value it returns. It is followed by the name of the function. You can declare variables and call functions in the body of the function declaration, but you have to return a value with the `return` keyword.  
 This function is named `Hello`, returns a value of type `Text` which is "Hello World!".
 
@@ -56,3 +56,22 @@ And finally the last line of the script!
 Did you notice the two parenthesis again? This line is also a function call.  
 `log` is a function that takes one argument and print it to the output console. Here it prints the value of `Sentence`, so "Hello World!" is printed.
 
+___
+
+In this example our function named `Hello` did not take any arguments, but it is possible to do so.
+Here is an example of another function named `Hello` that takes a name as argument:
+
+```maniascript
+Text Hello(Text _Name) {
+    return "Hello" ^ _Name ^ "!";
+}
+```
+
+Note that there is only one argument in the code above, but your functions can have as many arguments as you want, just separe them with a comma.
+In ManiaScript, the operator `^` concatenates strings together. So if you call the function like this:
+
+```maniascript
+log(Hello("you"));
+```
+
+It will print "Hello you!" to the console.

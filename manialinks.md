@@ -59,7 +59,7 @@ Each element normally are defined with multiple attributes, to add more just sep
 ## Basic attributes for all manialink elements
 
 | XML tag | Description |
-| :- | :- |
+| :---: | :--- |
 | pos=”X.x Y.y” | Sets the position of the element at coordinates system, see the coordinate system defined below. You can use integers or floats to define the absolute position. |
 | z-index=”Z.z” | Z-index defines the elements layers position.Indicies are always calculated within the container they are bound.<br/>You can think the z-index as pile papers. First one is 1 and second one is 2... and so on, so if you define indexes 1 and 2, the bigger value will overlap the smaller one, like the papers would overlap on your desk. |
 | scale=”i.i” | Sets the scale of the element, number must be zero or positive interger or float. |

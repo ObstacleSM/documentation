@@ -21,7 +21,7 @@ To start manialink you need basically the xml header and define manialink with t
 
 Manialink elements consists of different basic XML-tags, which are introduced below.
 
-| XML tag | |Description |
+| XML tag | Description |
 | :- | :- |
 | <quad /> | Displays image-type content. 
 Supported file-types are: .png, .jpg and .dds

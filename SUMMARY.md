@@ -19,8 +19,8 @@
 ## Creating your first script
 
 * [Game mode script structure](game-mode-script-structure.md)
-* [Create your first SM game mode](create-your-first-sm-game-mode.md)
-* [Create your first TM game mode](create-your-first-tm-game-mode.md)
+* Create your first SM game mode
+* Create your first TM game mode
 
 ## Manialink
 
@@ -34,7 +34,7 @@
 
 ## Create a map editor plugin/maptype
 
-* [Create an editor plugin](create-an-editor-plugin.md)
+* Create an editor plugin
 
 ## Create a maniaapp
 

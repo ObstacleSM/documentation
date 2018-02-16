@@ -1,37 +1,52 @@
 # Outline
 
-## Syntax basics
+## Getting started
 
-* declare variables
+* hello world
+    * declare variables
+    * functions
 * types
 * arrays functions
 
 ## Setup
 
-* editors
+* text editors
+* game mode setup
+* map editor setup
+* maniaapp setup
+* debugging
 * debugging
 
 ## Creating your first script
 
 * skeleton of a script
     * context
-* basic mode extending ModeShootmania.Script.txt
+* extending modes
 * labels
-* basic functions/events handling
+* basic events handling
 
-## Advanced Types/Declarations
-* alias
-* extension variable
-* net variables
-* persistant variables
+* create your first mode without manialink
 
 ## Manialinks
 
 * creating a manialink
+    * z-index
 * adding logic with the script tag
-* sync variables between manialinks
+* sync variables
+    * client extension variables
+    * server net variables
 
 * z-index
+## Advanced script features
+* alias
+* persistant variables
+* debugging
+
+## Create a real mode
+
+## Create a map editor plugin/maptype
+
+## Create a maniaapp
 
 ## Useful resources
 

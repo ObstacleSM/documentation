@@ -14,6 +14,7 @@
 ## Creating your first script
 
 * skeleton of a script
+    * context
 * basic mode extending ModeShootmania.Script.txt
 * labels
 * basic functions/events handling
@@ -29,6 +30,8 @@
 * creating a manialink
 * adding logic with the script tag
 * sync variables between manialinks
+
+* z-index
 
 ## Useful resources
 

@@ -11,17 +11,8 @@
 * [Create your first SM game mode](create-your-first-sm-game-mode.md)
 * [Create your first TM game mode](create-your-first-tm-game-mode.md)
 * Map editor development
-
-* [Create an editor plugin](create-an-editor-plugin.md)
-
-
-
-* [Create an editor plugin](create-an-editor-plugin.md)
-* [Create an editor plugin](create-an-editor-plugin.md)
-* [Create an editor plugin](create-an-editor-plugin.md)
 * [Create an editor plugin](create-an-editor-plugin.md)
 * Manialink
-
 * [Manialinks](manialinks.md)
 * ManiaScript
 * [Advanced features](advanced-features.md)

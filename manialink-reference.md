@@ -1,5 +1,0 @@
-# Manialink reference
-
-## Elements
-
-## Attributes

@@ -69,6 +69,6 @@ RespawnCounter += PlayerRSCounter;
 ### Persistant variables
 
 
-The keyword `persistent` can be added to a variable declaration to declare a persistant variable. A persistant variable is stored in the player's profile, and thus keep its value across different servers.
+The keyword `persistent` can be added to a variable declaration to declare a persistant variable. Depending on where the variable is declared, it is stored either in the player's profile or in the server, and thus keep its value across different servers or server restart.
 
 

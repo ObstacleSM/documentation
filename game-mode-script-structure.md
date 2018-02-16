@@ -61,19 +61,19 @@ or
 #Extends "Modes/Trackmania/Base/ModeTrackmania.Script.txt"
 ```
 
-The `#Extends` instruction is the most important header when writing a mode. It allows you to focus on writing the logic on your mode rather than its structure. `ModeShootmania` or `ModeTrackmania` contains everything you need to create a standard game mode: MatchMaking, Match, Map, Round and Turn logic.
+The `#Extends` instruction is the most important header when writing a mode. It allows you to focus on writing the logic on your mode rather than its structure. `ModeShootmania` and `ModeTrackmania` contains everything you need to create a standard game mode: MatchMaking, Match, Map, Round and Turn logic.
 
 ## Extending the base modes with labels
 
 
-I told you earlier that every scripts should have a `main` function. That is still the case I did not lie, but game modes are so complex that there some "base" scripts already define it. It allows you to put code during special events and at the beginning and end of each step with *labels*.
+I told you earlier that every scripts should have a `main` function. That is still the case I did not lie, but game modes are so complex that the base scripts already define it. They allow you to put code during special events and at the beginning and end of each step with *labels*.
 
 Here is the structure of a standard game mode(when extending `ModeShootmania` or `ModeTrackmania`): `Server -> Match -> Map -> Round -> Turn -> PlayLoop`.
 
 This structure is flexible and allows you to:
-    * Play a match on several maps.
-    * Each maps can be divided into several rounds.
-    * Each rounds can be further divided into several turns.
+* Play a match on several maps.
+* Each maps can be divided into several rounds.
+* Each rounds can be further divided into several turns.
 
 
 The list of some available labels:

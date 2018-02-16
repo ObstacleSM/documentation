@@ -74,6 +74,6 @@ log(UsersData[0]["login"]); // prints "me"
 
 ### API Arrays
 
-
+access by Integer or Ident
 
 

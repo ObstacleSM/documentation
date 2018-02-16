@@ -9,6 +9,7 @@
 ## Setup
 
 * editors
+* debugging
 
 ## Creating your first script
 

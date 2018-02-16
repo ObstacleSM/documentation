@@ -2,7 +2,7 @@
 
 ## Aliases
 
-When dealing with API arrays (arrays already defined) like `Players` in game modes or `Frame.Controls` in manialinks, it is often better to use aliases. Aliases are a special kind of variables that only work with API arrays, it works like this:
+When dealing with API arrays, it is often better to use aliases. Aliases are a special kind of variables that only work with API arrays, it works like this:
 
 ```maniascript
 // Imagine that they are two players
@@ -57,6 +57,14 @@ We declare extension variables like regular variables, the type is either explic
 Wait, you are maybe thinking that there is an error in the code above. Does the code above always set the variable to `0` and increment it by one after? Then every player should have `RespawnCounter` set to `1` no?
 
 When you are assigning a value to an extension variable during its declaration, you are setting a **default value**. It means that if `RespawnCounter` was already set to something other than `0`, its value will not change. In other words, `RespawnCounter` will be set to `0` only if it is the first time that we declare `RespawnCounter`.
+
+If you already have some a local variable with the same name as your extension variable, or that you want to rename it locally, you can use the `as` keyword.
+
+```maniascript
+declare RespawnCounter = 12;
+declare RespawnCounter as PlayerRSCounter for Player = 0;
+RespawnCounter += PlayerRSCounter;
+```
 
 ### Persistant variables
 

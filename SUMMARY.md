@@ -5,7 +5,8 @@
 
 ## Getting Started
 
-* [Hello World](hello_world.md)
+* [Hello World](hello-world.md)
+* [Control Flow](control-flow.md)
 * [Types](types.md)
 
 ## Setup

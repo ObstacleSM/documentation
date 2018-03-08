@@ -1,6 +1,6 @@
 # Manialinks
 
-## what is manialink
+## What is manialink
 
 Manialink is a XML-document with certaint types of tags with parameters.
 You should be able to learn the basics here by an example, but for more detailed overiview please refer W3C XML tutorial: https://www.w3schools.com/xml/xml_whatis.asp
@@ -13,7 +13,7 @@ To start manialink you need basically the xml header and define manialink with t
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 
 <manialink version="3">
-	// this is comment
+	<!-- this is comment -->
 </manialink>
 ```
 
@@ -35,16 +35,18 @@ Manialink elements consists of different basic XML-tags, which are introduced be
 | `<frame>`<br/>`</frame>` | This is different from the previous elements, as this itself doesn't show anything, but it can be used to group contents to a container. The grouped contents then can be then easily moved / repositioned. |
 |`<framemodel>`<br/>`</framemodel>` | This element defines a model container for the frame instances, works same as frames. By default the frame model is not shown at ui, you display the model using frame instaces. |
 | `<frameinstance/>` | This element is used to display contents defined with frame model. |
-
+| `<dico>` | Creates dictionary for multilingual label messages |
+ 
 ## Manialink positioning system
 
 Manialink uses currently positioning system which is optimized for 16:9 displays.
-The origo is defined to the center at the screen, at position <0.0, 0.0>
-Depending the proportions and the size of the screen, then contents are streched and scaled to always have same relative size and positions on the screen. The viewport total width is 320 units and total height is 180 units. Illutration below shows how the coordinate system works in practise.
+The origo is defined to the center at the screen, at position `0.0, 0.0` Depending the proportions and the size of the screen, then contents are streched and scaled to always have same relative size and positions on the screen. The viewport total width is 320 units and total height is 180 units. Illutration below shows how the coordinate system works in practise.
+
+![](/assets/manialink.png)
 
 ## Defining attributes for elements
 
-Each above introduced elements has many different attributes which they operate, but they all share some common ones. Attributes are always written inside the tag and after the basic element, see example with an attribute defined with value.
+Each element has many different attributes which they operate, but they all share some common ones. Attributes are always written inside the tag and after the basic element, see example with an attribute defined with value.
 
 ```xml
 <label attribute=”value” />
@@ -68,11 +70,9 @@ Each element normally are defined with multiple attributes, to add more just sep
 | id=”value” | You can define name for the element. This id works kinda same as id in html. The values should be unique per manialink, normally you would search the element by its id using maniascript. |
 | class=”class1 class2” | Classes works same as html. You can define multiple classes for one element and use maniascript to access them. |
 
-## Additional attributes for each elements
-
-Quite meny of the elements share additional Size and Aligment attributes, these shared attributes are marked with grey background.
-
 ### Quad
+
+##### Common attributes
 
 | XML tag | Description |
 | :---: | :--- |
@@ -85,7 +85,7 @@ Quite meny of the elements share additional Size and Aligment attributes, these 
 | url=”url” | Sets redirect to url when clicked. |
 | manialink=”uri” | Sets redirect to manialink when clicked |
 
-You should define either color, style or image for the quad:
+##### Quad specific
 
 | XML tag | Description |
 | :---: | :--- |
@@ -94,17 +94,14 @@ You should define either color, style or image for the quad:
 | style="style" | Defines predefined style to be used as image, you need to define also substyle.<br/><br/>Refer: manialink://styles for full preview
 | substyle="substyle" | Defines predefined substyle to be used as image, you need also define style.<br/><br/>Refer: manialink://styles for full preview |
 | styleselected="1" | If the style has mousehover state, use that.<br/>bgcolor="rrggbbaa" Sets background color. <br/>You can use following color syntaxes: <br/>RGB, RGBA, RRGGBB, or RRGGBBAA syntax |
-
-You can also recolor / alter the colors of the image or style element.
-
-| XML tag | Description |
-| :---: | :--- |
 | colorize="rrggbb" | Sets colorize value for the element, this is very useful. You can change the green-colored contents to color of your choosing, all other colors are left intact. |
 | modulatecolor="rrggbb" | Sets modulate color: this modulates the hue of the image. <br/>For best results use grayscale images. |
-| autoscale="0" | To disable automatic scaling, use following syntax. |
+| autoscale="0" | To disable automatic scaling. |
 | keepratio="value" | Sets the behaviour on resizeing:<br/>values here are following, notice the capital letters: "Inactive", "Fit", "Clip" |
 
 ### Label
+
+##### Common attributes
 
 | XML tag | Description |
 | :---: | :--- |
@@ -116,11 +113,40 @@ You can also recolor / alter the colors of the image or style element.
 | action="value" | Sets the action to be used with dedicated server callback system. |
 | url="url" | Sets redirect to url when clicked. |
 | manialink="uri" | Sets redirect to manialink when clicked |
+
+##### Label specific attributes
+| XML tag | Description |
+| :---: | :--- |
 | style="value" | Sets style/font of the label.<br/><br/>Refer: manialink://styles for valid styles. |
-| textfont="value" | Sets font to be used. |
+| textfont="value" | Sets embed font to be used, usable on titlepacks. |
+| text="value"| Sets the text to be displayed|
+| textprefix="value"| Sets the prefix for text to be displayed |
+| textsize="f"| Sets text size, float numbers can be used.|
+| textemboss="b"| Sets text emboss, values can be "1" or "0"|
+| autonewline="b" | Sets if new lines should be applied when text doesn't fit on the bounding box, "1" or "0"|
+| maxline="i" | Sets maximum lines to be used, use integer numbers|
+|
+| translate="b"| Sets if the text should use translations. In this case use Dico-element for defining multilingual messages, instead of using text="value", use textid="id"|
+| textid="id"| Sets multilingual textid for looking up translation from Dico-element, note this is used as XML-tag in Dico.|
+| textcolor="rrggbbaa" | Set text color. |
+| focusareacolor1="rrggbbaa" | Sets text background color, when scriptevents="1"|
+| focusareacolor2="rrggbbaa" | Sets text mouse hover background color, when scriptevents="1"|
 
-## Client side script
+### Dico
 
-## Casting
+Creates a dictionary for multilingual support, example shown below:
 
-## net variables
+```xml
+<dico>
+  <language id="fr">
+   <example1>Salut</example1>
+  </language>
+  <language id="en">
+   <example1>Hello</example1>
+  </language>
+</dico>
+
+<label textid="example1" />
+```
+
+The last defined language will be used as the default one, when no matching language is found for game client.

@@ -3,8 +3,8 @@
 ## Getting started
 
 * hello world
-    * declare variables
-    * functions
+  * declare variables
+  * functions
 * types
 * arrays functions
 
@@ -20,7 +20,7 @@
 ## Creating your first script
 
 * skeleton of a script
-    * context
+  * context
 * extending modes
 * labels
 * basic events handling
@@ -30,14 +30,20 @@
 ## Manialinks
 
 * creating a manialink
-    * z-index
 * adding logic with the script tag
 * sync variables
-    * client extension variables
-    * server net variables
+
+  * client extension variables
+  * server net variables
+
+* animmgr
+
+* interface designer
 
 * z-index
-## Advanced script features
+
+  ## Advanced script features
+
 * alias
 * persistant variables
 * debugging

@@ -41,5 +41,5 @@ Void doSomething(CMlControl _Control) {
 ```
 
 ## The `main`-function
-The `main`-function is a special case as it does not have a return-type, no arguments and cannot be redeclared (?).
+The `main`-function is a special case as it does not have a return-type, no arguments and cannot be re-declared.
 It is the entrance into your program.

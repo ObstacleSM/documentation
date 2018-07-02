@@ -1,6 +1,7 @@
 # Types
+ManiaScript is a strongly typed language which means that every value has to be of a certain type and a value of different type will not be accepted in it's place.
 
-## Basic types
+## Primitive Types
 
 There are 9 different types in ManiaScript: `Void`, `Integer`, `Real`, `Boolean`, `Text`, `Vec2`, `Vec3`,`Int3` and `Ident`.
 
@@ -13,6 +14,7 @@ There are 9 different types in ManiaScript: `Void`, `Integer`, `Real`, `Boolean`
 | Text | `Text` represents a string of characters. |
 | Vec2 | `Vec2` is a two dimensional vector \($$\mathbb{R^2}$$ in mathematics\). The two values can be accessed with `X` and `Y` respectively. |
 | Vec3 | `Vec3` is a three dimensional vector \($$\mathbb{R^3}$$ in mathematics\). The third value can be accessed with the `Z` property. |
+| Int3 | `Int3` is a three dimensional vector \($$\mathbb{Z^3}$$ in mathematics\). |
 | Ident | `Ident` is the type of an Id. Every class in ManiaScript has a unique `Id` property that can be used to identify it. |
 
 ## Lists and Arrays
@@ -76,4 +78,6 @@ log(UsersData[0]["login"]); // prints "me"
 
 access by Integer or Ident
 
-
+## Vectors
+Vectors are declared with pointing angles: `declare Vec2 V = <1.0, 2.0>`.
+Vector-elements can be accessed either with `X`, `Y` and `Z` (as `V.Y`) or like an array with the indices `0` to `2` (like `V[1]`) (depending on the vector having 2 or 3 elements). Vectors are initialized with the initial value for `Integer` or `Real` respectively, e.g. `declare Vec3 V; log(V);` will log as `<0., 0., 0.>`.

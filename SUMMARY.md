@@ -6,8 +6,10 @@
 ## Getting Started
 
 * [Hello World](hello-world.md)
-* [Control Flow](control-flow.md)
-* [Types](types.md)
+* [Variables](content/syntax/variables.md)
+* [Types](content/syntax/types.md)
+* [Control Flow](content/syntax/control-flow.md)
+* [Functions](content/syntax/functions.md)
 
 ## Setup
 
@@ -42,16 +44,19 @@
 ## Useful resources
 
 * nadeo's lib source code
-* reference
-* cp discord
-* doc
-* forums
+* [Reference](https://maniaplanet.github.io/maniascript-reference/annotated.html)
+* [Creators Place Discord](https://discord.gg/cFtjfU7)
+* [Documentation](https://doc.maniaplanet.com/)
+* [Forum](https://forum.maniaplanet.com)
 
 ## Cookbook
 
+* [Working with UI layers](content/cookbook/working-with-ui-layers.md)
 * Modifying player's attributes
 * Use CustomUI
 * Capture landmarks
 * Custom items / Drop item from player
 * Actions
 
+## Appendix
+* [Grammar](content/appendix/grammar.md)

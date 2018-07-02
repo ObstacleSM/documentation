@@ -1,7 +1,8 @@
 # Control flow
+Deciding on a "route" to take through your program is "controlling the flow" through your application. This can include both skipping parts of your code under certain circumstances or repeating instructions multiple times without actually writing them down multiple times.
 
 ## Choice
-A program mosten times is only useful if it does different things based on conditions.
+A program usually is only useful if it does different things based on conditions.
 
 ### If Else
 Code following an `if`-statement only gets evaluated if the given expression evaluates to `True`. To handle the case that the condition evalutes to `False`, you can follow up with an `else`-statement without further arguments:
@@ -70,8 +71,7 @@ for (I, 2, 5) {
     log(I);
 }
 ```
-`I` will assume the values 2 to 5 (inclusive) throughout your code's execution. As you are probably iterating over lists or arrays a lot, keep in mind, that you can only run to `List.count - 1`.  
-The `for`-loop accepts a fourth argument declaring the step-size aka. by which amount your step variable will be altered each time.
+`I` will assume the values 2 to 5 (inclusive) throughout your code's execution. As you are probably iterating over lists or arrays a lot, keep in mind, that you can only run to `List.count - 1`.
 
 ### Foreach
 When iterating over an array or a complete list, you might use the `foreach`-loop:

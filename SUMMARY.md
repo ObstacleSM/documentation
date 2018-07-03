@@ -15,15 +15,20 @@
 
 * [Editor Setup](editor-setup.md)
 * [Game mode dev setup](gamemode-setup.md)
+<!--
 * Map editor setup
 * ManiaApp setup
 * Debugging
+-->
+
 
 ## Creating your first script
 
 * [Game mode script structure](game-mode-script-structure.md)
+<!--
 * Create your first SM game mode
 * Create your first TM game mode
+-->
 
 ## Manialink
 
@@ -33,6 +38,7 @@
 
 * [Advanced features](advanced-features.md)
 
+<!--
 ## Create a real mode
 
 ## Create a map editor plugin/maptype
@@ -40,10 +46,11 @@
 * Create an editor plugin
 
 ## Create a maniaapp
+-->
 
 ## Useful resources
 
-* nadeo's lib source code
+* [NADEO's open-source scripts](https://github.com/maniaplanet/game-modes)
 * [Reference](https://maniaplanet.github.io/maniascript-reference/annotated.html)
 * [Creators Place Discord](https://discord.gg/cFtjfU7)
 * [Documentation](https://doc.maniaplanet.com/)
@@ -52,11 +59,13 @@
 ## Cookbook
 
 * [Working with UI layers](content/cookbook/working-with-ui-layers.md)
+<!--
 * Modifying player's attributes
 * Use CustomUI
 * Capture landmarks
 * Custom items / Drop item from player
 * Actions
+-->
 
 ## Appendix
 * [Grammar](content/appendix/grammar.md)

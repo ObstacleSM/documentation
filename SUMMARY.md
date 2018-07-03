@@ -10,6 +10,7 @@
 * [Types](content/syntax/types.md)
 * [Control Flow](content/syntax/control-flow.md)
 * [Functions](content/syntax/functions.md)
+* [Labels](content/syntax/labels.md)
 
 ## Setup
 

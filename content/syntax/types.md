@@ -1,4 +1,5 @@
 # Types
+
 ManiaScript is a strongly typed language which means that every value has to be of a certain type and a value of different type will not be accepted in it's place.
 
 ## Primitive Types
@@ -36,12 +37,27 @@ declare FirstElement = MyList[0];
 // Basic functions
 declare Size = MyList.count;
 declare SortedList = MyList.sort();
-MyList.add(42);
+declare ReversedList = MyList.sortreverse();
+declare SortKeys = MyArray.sortkey();
+declare ReversedKeys = MyArray.sortkeyreverse();
+
+
+MyList.add(42);  // adds to last element
+MyList.addfirst() // adds to first element
 MyList.removekey(0); // Remove the element at the index 0
 MyList.remove(38);
+
 declare DoesExist1 = MyList.existskey(58); // equivalent to 0 <= 58 < MyList.count
 declare DoesExist2 = MyList.exists(12);
 declare Index = MyList.keyof(28); // such as List[Index] == 28
+
+MyList.containsonly();
+MyList.containsoneof();
+MyList.slice();
+
+Declare Text json = MyList.tojson();
+MyList.fromjson("{ "propery": "value"});
+
 MyList.clear();
 ```
 
@@ -78,6 +94,35 @@ log(UsersData[0]["login"]); // prints "me"
 
 access by Integer or Ident
 
+### Structs
+
+```maniascript
+#Struct MyStruct {
+//      {Type} {propertyname};
+	Integer MyMember;
+	Text MyTextMember;
+}
+
+main() {
+	declare MyStruct MyVar;
+	// declare MyStruct MyVar = MyStruct{MyMember = 1, MyTextMember = "Example"};
+	log(MyVar.MyMember); //Output : 0
+	
+	MyVar.MyMember = 1;
+	log(MyVar.MyMember); //Output : 1
+	
+	declare MyStruct MyCopy = MyVar;
+	log(MyCopy.MyMember); //Output : 1
+	
+	MyVar.MyMember = MyVar.MyMember + 1;
+	
+	log(MyVar.MyMember); //Output : 2
+	log(MyCopy.MyMember); //Output : 1
+}
+```
+
 ## Vectors
-Vectors are declared with pointing angles: `declare Vec2 V = <1.0, 2.0>`.
-Vector-elements can be accessed either with `X`, `Y` and `Z` (as `V.Y`) or like an array with the indices `0` to `2` (like `V[1]`) (depending on the vector having 2 or 3 elements). Vectors are initialized with the initial value for `Integer` or `Real` respectively, e.g. `declare Vec3 V; log(V);` will log as `<0., 0., 0.>`.
+
+Vectors are declared with pointing angles: `declare Vec2 V = <1.0, 2.0>`.  
+Vector-elements can be accessed either with `X`, `Y` and `Z` \(as `V.Y`\) or like an array with the indices `0` to `2` \(like `V[1]`\) \(depending on the vector having 2 or 3 elements\). Vectors are initialized with the initial value for `Integer` or `Real` respectively, e.g. `declare Vec3 V; log(V);` will log as `<0., 0., 0.>`.
+

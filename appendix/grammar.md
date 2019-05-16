@@ -1,6 +1,8 @@
 # Grammar
+
 simplified excerpt from the grammar
-```
+
+```text
 LineTerminator = [\n\r]
 
 Program = Directive* (GlobalDeclaration|FunctionDefinition|LabelBlock)* MainFunction?
@@ -74,3 +76,4 @@ LabelBlock = "***" Identifier "***" "***" FunctionBody "***"
 
 MainFunction = "main" "(" ")" "{" FunctionBody "}"
 ```
+

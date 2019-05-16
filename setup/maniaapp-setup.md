@@ -1,0 +1,2 @@
+# ManiaApp setup
+

@@ -1,53 +1,38 @@
-# Summary
+# Table of contents
 
 * [Introduction](README.md)
 * [Outline](chapter1.md)
 
 ## Getting Started
 
-* [Hello World](hello-world.md)
-* [Variables](content/syntax/variables.md)
-* [Types](content/syntax/types.md)
-* [Control Flow](content/syntax/control-flow.md)
-* [Functions](content/syntax/functions.md)
-* [Labels](content/syntax/labels.md)
+* [Hello World](getting-started/hello-world.md)
+* [Variables](getting-started/variables.md)
+* [Types](getting-started/types.md)
+* [Control Flow](getting-started/control-flow.md)
+* [Functions](getting-started/functions.md)
+* [Labels](getting-started/labels.md)
 
 ## Setup
 
-* [Editor Setup](editor-setup.md)
-* [Game mode dev setup](gamemode-setup.md)
-<!--
-* Map editor setup
-* ManiaApp setup
-* Debugging
--->
-
+* [Editor Setup](setup/editor-setup.md)
+* [Game mode dev setup](setup/gamemode-setup.md)
+* [Map editor setup](setup/map-editor-setup.md)
+* [ManiaApp setup](setup/maniaapp-setup.md)
+* [Debugging](setup/debugging.md)
 
 ## Creating your first script
 
-* [Game mode script structure](game-mode-script-structure.md)
-<!--
-* Create your first SM game mode
-* Create your first TM game mode
--->
+* [Game mode script structure](creating-your-first-script/game-mode-script-structure.md)
+* [Create your first SM game mode](creating-your-first-script/create-your-first-sm-game-mode.md)
+* [Create your first TM game mode](creating-your-first-script/create-your-first-tm-game-mode.md)
 
 ## Manialink
 
-* [Manialinks](manialinks.md)
+* [Manialinks](manialink/manialinks.md)
 
 ## Advanced ManiaScript
 
-* [Advanced features](advanced-features.md)
-
-<!--
-## Create a real mode
-
-## Create a map editor plugin/maptype
-
-* Create an editor plugin
-
-## Create a maniaapp
--->
+* [Advanced features](advanced-maniascript/advanced-features.md)
 
 ## Useful resources
 
@@ -59,14 +44,14 @@
 
 ## Cookbook
 
-* [Working with UI layers](content/cookbook/working-with-ui-layers.md)
-<!--
-* Modifying player's attributes
-* Use CustomUI
-* Capture landmarks
-* Custom items / Drop item from player
-* Actions
--->
+* [Working with UI layers](cookbook/working-with-ui-layers.md)
+* [Modifying player's attributes](cookbook/modifying-players-attributes.md)
+* [Use CustomUI](cookbook/use-customui.md)
+* [Capture landmarks](cookbook/capture-landmarks.md)
+* [Custom items / Drop item from player](cookbook/custom-items-drop-item-from-player.md)
+* [Actions](cookbook/actions.md)
 
 ## Appendix
-* [Grammar](content/appendix/grammar.md)
+
+* [Grammar](appendix/grammar.md)
+

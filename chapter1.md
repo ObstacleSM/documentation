@@ -24,7 +24,6 @@
 * extending modes
 * labels
 * basic events handling
-
 * create your first mode without manialink
 
 ## Manialinks
@@ -32,17 +31,13 @@
 * creating a manialink
 * adding logic with the script tag
 * sync variables
-
   * client extension variables
   * server net variables
-
 * animmgr
-
 * interface designer
-
 * z-index
 
-  ## Advanced script features
+  **Advanced script features**
 
 * alias
 * persistant variables
@@ -69,6 +64,4 @@
 * Capture landmarks
 * Custom items / Drop item from player
 * Actions
-
-
 

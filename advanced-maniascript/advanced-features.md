@@ -4,7 +4,7 @@
 
 When dealing with API arrays, it is often better to use aliases. Aliases are a special kind of variables that only work with API arrays, it works like this:
 
-```maniascript
+```text
 // Imagine that they are two players
 // Player A has 5 points
 // Player B has 0 points
@@ -24,10 +24,9 @@ Players[1].Score.Points += 10;
 // FirstPlayerAlias will always points to the first element of Players
 ```
 
-In a nutshell, an alias is like a pointer in C, it points to the first player of the `Players` array.
-The advantages of aliases over regular assignations is that aliases are faster and consume less resources.
+In a nutshell, an alias is like a pointer in C, it points to the first player of the `Players` array. The advantages of aliases over regular assignations is that aliases are faster and consume less resources.
 
-```maniascript
+```text
 declare Frame_Content = (Page.GetFirstChild("Frame_Content") as CMlFrame);
 declare Frame_Content <=> (Page.GetFirstChild("Frame_Content") as CMlFrame);
 ```
@@ -40,7 +39,7 @@ You cannot create classes in ManiaScript, so what if you write a game mode and y
 
 An extension variable works like a variable, but instead of declaring a variable for the current scope, you **extend** an existing object. Here is an example:
 
-```maniascript
+```text
 // This code is in a SM game mode which needs to track how many times a player has respawned
 
 //Somewhere in the PlayLoop
@@ -60,7 +59,7 @@ When you are assigning a value to an extension variable during its declaration, 
 
 If you already have a local variable with the same name as your extension variable, or that you want to rename it locally, you can use the `as` keyword.
 
-```maniascript
+```text
 declare RespawnCounter = 12;
 declare RespawnCounter as PlayerRSCounter for Player = 0;
 RespawnCounter += PlayerRSCounter;
@@ -68,7 +67,5 @@ RespawnCounter += PlayerRSCounter;
 
 ### Persistant variables
 
-
 The keyword `persistent` can be added to a variable declaration to declare a persistant variable. Depending on where the variable is declared, it is stored either in the player's profile or in the server, and thus keep its value across different servers or server restart.
-
 

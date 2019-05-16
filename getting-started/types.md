@@ -24,13 +24,13 @@ There are 9 different types in ManiaScript: `Void`, `Integer`, `Real`, `Boolean`
 
 A List is a type that can store multiple values. You can declare list by adding two square brackets after a type.
 
-```maniascript
+```text
 declare Integer[] MyList;
 ```
 
 There are several basic functions to manipulate them, and you can access one element by its index. The indexes start at 0, so the first index is `0` and the last one is `MyList.count-1`. Accessing an invalid index will result in an `Out of bounds` error.
 
-```maniascript
+```text
 // Access an element
 declare FirstElement = MyList[0];
 
@@ -65,19 +65,19 @@ MyList.clear();
 
 An array is similar to a list, except that you can specify a type for the index.
 
-```maniascript
+```text
 declare Text[Integer] MyArray;
 ```
 
 The array above is not a list! There is no `add` function for arrays, instead you directly assign a value for the given key.
 
-```maniascript
+```text
 MyArray[1] = "One";
 ```
 
 You can even nest them!
 
-```maniascript
+```text
 declare Text[Text][] UsersData;
 UsersData = [
     [ "login" => "me",
@@ -96,28 +96,28 @@ access by Integer or Ident
 
 ### Structs
 
-```maniascript
+```text
 #Struct MyStruct {
 //      {Type} {propertyname};
-	Integer MyMember;
-	Text MyTextMember;
+    Integer MyMember;
+    Text MyTextMember;
 }
 
 main() {
-	declare MyStruct MyVar;
-	// declare MyStruct MyVar = MyStruct{MyMember = 1, MyTextMember = "Example"};
-	log(MyVar.MyMember); //Output : 0
-	
-	MyVar.MyMember = 1;
-	log(MyVar.MyMember); //Output : 1
-	
-	declare MyStruct MyCopy = MyVar;
-	log(MyCopy.MyMember); //Output : 1
-	
-	MyVar.MyMember = MyVar.MyMember + 1;
-	
-	log(MyVar.MyMember); //Output : 2
-	log(MyCopy.MyMember); //Output : 1
+    declare MyStruct MyVar;
+    // declare MyStruct MyVar = MyStruct{MyMember = 1, MyTextMember = "Example"};
+    log(MyVar.MyMember); //Output : 0
+
+    MyVar.MyMember = 1;
+    log(MyVar.MyMember); //Output : 1
+
+    declare MyStruct MyCopy = MyVar;
+    log(MyCopy.MyMember); //Output : 1
+
+    MyVar.MyMember = MyVar.MyMember + 1;
+
+    log(MyVar.MyMember); //Output : 2
+    log(MyCopy.MyMember); //Output : 1
 }
 ```
 

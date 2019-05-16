@@ -1,4 +1,4 @@
-# Editors
+# Editor Setup
 
 There are several editors available to write ManiaScript. Note that none of them have IDE features like code completion, go to definitions or refactoring.
 
@@ -10,5 +10,4 @@ Here is a list of the different editors:
 | Sublime Text 3 | [Latest Update Oct 19 2015](https://github.com/ManiaPlanet/Sublime-ManiaScript) |
 | Notepad++ | [Latest Update Aug 8 2014](https://github.com/ManiaPlanet/notepadplusplus-maniascript) |
 | In-Game editor | X |
-
 

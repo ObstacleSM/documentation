@@ -1,0 +1,2 @@
+# Map editor setup
+

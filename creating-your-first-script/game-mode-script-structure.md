@@ -1,7 +1,6 @@
-# Game mode script stucture
+# Game mode script structure
 
-So you want to create a new game mode for your favourite game?
-The first step is to understand how game mode scripts are structured.
+So you want to create a new game mode for your favourite game? The first step is to understand how game mode scripts are structured.
 
 ## Directives
 
@@ -9,54 +8,39 @@ The top of the file can contain some special instructions that start with a hash
 
 ### Common directives
 
-
-```maniascript
+```text
 #Const CompatibleMapTypes "ObstacleArena,ObstacleTitleArena,TimeAttackArena,ObstacleBetaArena"
 #Const Version            "1.2"
 #Const ScriptName         "Modes/ShootMania/Obstacle.Script.txt"
 ```
 
-The `#Const` directive is used to define constants. The keyword is followed by an identifier to access the value defined just after. The examples above are only `Text` but you can use other Types too.
-These three constants are used by the game to have some informations about the mode.
-`CompatibleMapTypes` indicates with wich maptypes the mode is compatible
-`Version` defines, well, the version of your script. It can be anything, for example all Nadeo's script use a date format `"2013-11-14"`.
-`ScriptName` is the path of your script
+The `#Const` directive is used to define constants. The keyword is followed by an identifier to access the value defined just after. The examples above are only `Text` but you can use other Types too. These three constants are used by the game to have some informations about the mode. `CompatibleMapTypes` indicates with wich maptypes the mode is compatible `Version` defines, well, the version of your script. It can be anything, for example all Nadeo's script use a date format `"2013-11-14"`. `ScriptName` is the path of your script
 
-___
-
-```maniascript
+```text
 #Include "Libs/Nadeo/Message.Script.txt" as Message
 #Include "TextLib" as TextLib
 ```
 
-The `#Include` directive allows you to use functions or constants from separate libraries.
-In the first statement above, we include a library made by Nadeo to handle Message (you can see the code of Nadeo's libs in the in-game editor or in their [github repository](https://github.com/maniaplanet/game-modes/tree/master/Common/Scripts/Libs/Nadeo)). The first parameter is the path to the library and then an identifier to use it prefixed by `as`.
-The second lib is special because you can see that there is no path. It's because you can import the TextLib from any scripts. It is also the case for the MathLib, TimeLib, AnimLib and MapUnits.
+The `#Include` directive allows you to use functions or constants from separate libraries. In the first statement above, we include a library made by Nadeo to handle Message \(you can see the code of Nadeo's libs in the in-game editor or in their [github repository](https://github.com/maniaplanet/game-modes/tree/master/Common/Scripts/Libs/Nadeo)\). The first parameter is the path to the library and then an identifier to use it prefixed by `as`. The second lib is special because you can see that there is no path. It's because you can import the TextLib from any scripts. It is also the case for the MathLib, TimeLib, AnimLib and MapUnits.
 
 The syntax to use a function from a library or read a constant is :
 
-```maniascript
+```text
 declare One = TextLib::ToInteger("1");
 declare MessageScriptVersion = Message::Version;
 ```
 
 ### Game mode specific directives
 
-
-```maniascript
+```text
 #Setting S_TimeLimit       600 as _("Time limit")      ///<   Time limit on a map
 #Setting S_PointLimit      25  as _("Points limit")    ///<   Points limit on a map
 #Setting S_HiddenSetting   25  as "<hidden>"           ///<   Invisible by the players
 ```
 
-The `#Setting` directive is used to allow the server hoster and the players to change the rules of your mode. The examples only use the type Integer, but you can also use `Real`, `Boolean` and `Text`.
-The server hoster can edit any script settings in the playlist file or with a server controller. The players can start a vote to change the value of the settings that are not hidden.
+The `#Setting` directive is used to allow the server hoster and the players to change the rules of your mode. The examples only use the type Integer, but you can also use `Real`, `Boolean` and `Text`. The server hoster can edit any script settings in the playlist file or with a server controller. The players can start a vote to change the value of the settings that are not hidden.
 
-
-___
-
-
-```maniascript
+```text
 #Extends "Modes/ShootMania/Base/ModeShootmania.Script.txt"
 or
 #Extends "Modes/Trackmania/Base/ModeTrackmania.Script.txt"
@@ -66,44 +50,43 @@ The `#Extends` directive is the most important directive when writing a mode. It
 
 ## Extending the base modes with labels
 
-
 I told you earlier that every scripts should have a `main` function. That is still the case I did not lie, but game modes are so complex that the base scripts already define it. They allow you to put code during special events and at the beginning and end of each step with **labels**.
 
-Here is the structure of a standard game mode(when extending `ModeShootmania` or `ModeTrackmania`): `Server -> Match -> Map -> Round -> Turn -> PlayLoop`.
+Here is the structure of a standard game mode\(when extending `ModeShootmania` or `ModeTrackmania`\): `Server -> Match -> Map -> Round -> Turn -> PlayLoop`.
 
 This structure is flexible and allows you to:
+
 * Play a match on several maps.
 * Each maps can be divided into several rounds.
 * Each rounds can be further divided into several turns.
 
-
 The list of some available labels:
-- Yield (it's called every tick)
 
-- Settings
-- LoadLibrairies
-- LogVersions
-- InitServer
-- Rules
-- StartServer
-	- InitMatch
-	- StartMatch
-		- InitMap
-		- StartMap
-			- InitRound
-			- StartRound
-				- InitTurn
-				- StartTurn
-					- PlayLoop
-				- EndTurn
-			- EndRound
-		- EndMap
-	- EndMatch
-- EndServer
+* Yield \(it's called every tick\)
+* Settings
+* LoadLibrairies
+* LogVersions
+* InitServer
+* Rules
+* StartServer
+  * InitMatch
+  * StartMatch
+    * InitMap
+    * StartMap
+      * InitRound
+      * StartRound
+        * InitTurn
+        * StartTurn
+          * PlayLoop
+        * EndTurn
+      * EndRound
+    * EndMap
+  * EndMatch
+* EndServer
 
 Here is an example of code to display the name of the map each time a map starts.
 
-```maniascript
+```text
 ***Match_StartMap***
 ***
 ModeStatusMessage = "Current map : "^Map.MapInfo.Name;
@@ -115,3 +98,4 @@ Note that the label name is not `StartMap` but `Match_StartMap`. It is because i
 If you want more details on how labels work, read the Labels part of Advanced Features.
 
 Now that you know the basic structure of a game mode, it is time to create one yourself!
+
